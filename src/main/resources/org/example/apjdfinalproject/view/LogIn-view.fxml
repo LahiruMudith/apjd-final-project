@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="root" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.apjdfinalproject.Controllers.LoginController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0" layoutX="150.0" layoutY="94.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../assets/LogIn%20Pic%20(Bule).jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtEmail" layoutX="156.0" layoutY="127.0" prefHeight="38.0" prefWidth="287.0" promptText="Email" style="-fx-background-color: none; -fx-border-color: #ecf0f1; -fx-border-radius: 10; -fx-text-fill: #ecf0f1;" />
+      <PasswordField fx:id="txtPassword" layoutX="156.0" layoutY="183.0" prefHeight="37.0" prefWidth="287.0" promptText="Password" style="-fx-background-color: none; -fx-border-color: #ecf0f1; -fx-border-radius: 10; -fx-text-fill: #ecf0f1;" />
+      <Button layoutX="248.0" layoutY="254.0" mnemonicParsing="false" onAction="#Login" prefHeight="29.0" prefWidth="94.0" style="-fx-background-color: none; -fx-border-color: #ecf0f1; -fx-border-radius: 20;" text="LogIn" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="349.0" layoutY="224.0" mnemonicParsing="false" onAction="#ForgotPassword" prefHeight="29.0" prefWidth="94.0" style="-fx-background-color: none;" text="Forgot Password" textFill="WHITE">
+         <font>
+            <Font size="10.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="156.0" layoutY="224.0" mnemonicParsing="false" onAction="#CreateAccount" prefHeight="29.0" prefWidth="94.0" style="-fx-background-color: none;" text="Create Account" textFill="WHITE">
+         <font>
+            <Font size="10.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Text layoutX="156.0" layoutY="389.0" strokeType="OUTSIDE" strokeWidth="0.0" text="© 2023 All rights reserved.Create By Lahiru Mudith From LK" wrappingWidth="287.20000000000005">
+         <font>
+            <Font name="Berlin Sans FB" size="10.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="207.0" fitWidth="265.0" layoutX="168.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/LOGO.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
