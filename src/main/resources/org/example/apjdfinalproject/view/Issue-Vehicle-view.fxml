@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane fx:id="root" prefHeight="502.0" prefWidth="650.0" style="-fx-background-color: #bdc3c7;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.apjdfinalproject.Controllers.IssueVehicleController">
+   <children>
+      <Text layoutX="245.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Issue Vehicle" underline="true">
+         <font>
+            <Font name="Book Antiqua Bold Italic" size="28.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtSearchCustomerNIC" layoutX="14.0" layoutY="104.0" onAction="#SearchCustomer" prefHeight="43.0" prefWidth="270.0" promptText="Search Customer NIC Number" style="-fx-background-radius: 5;" />
+      <TextField fx:id="txtSearchVehicleNumber" layoutX="346.0" layoutY="104.0" onAction="#SearchVehicle" prefHeight="43.0" prefWidth="270.0" promptText="Search Vehicle Number" style="-fx-background-radius: 5;" />
+      <TextField fx:id="txtCustomerNIC" layoutX="190.0" layoutY="196.0" prefHeight="43.0" prefWidth="295.0" style="-fx-background-radius: 5;" />
+      <TextField fx:id="txtCustomerName" layoutX="152.0" layoutY="248.0" prefHeight="43.0" prefWidth="295.0" style="-fx-background-radius: 5;" />
+      <TextField fx:id="txtVehicleNumber" layoutX="152.0" layoutY="301.0" prefHeight="43.0" prefWidth="295.0" style="-fx-background-radius: 5;" />
+      <TextField fx:id="txtVehicleBrandName" layoutX="174.0" layoutY="354.0" prefHeight="43.0" prefWidth="295.0" style="-fx-background-radius: 5;" />
+      <Text layoutX="58.0" layoutY="221.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer NIC Number :">
+         <font>
+            <Font name="Book Antiqua" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="58.0" layoutY="274.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer Name :">
+         <font>
+            <Font name="Book Antiqua" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="58.0" layoutY="327.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vehicle Number :">
+         <font>
+            <Font name="Book Antiqua" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="58.0" layoutY="380.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vehicle Brand Name :">
+         <font>
+            <Font name="Book Antiqua" size="12.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="43.0" fitWidth="36.0" layoutX="266.0" layoutY="423.0" onMouseClicked="#IssueVehicle" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/CarRent.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="43.0" fitWidth="36.0" layoutX="388.0" layoutY="423.0" onMouseClicked="#ViewAll" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/LoadAllIcon.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
