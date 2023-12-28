@@ -2,6 +2,12 @@ create database Lahiru_Motors;
 
 use Lahiru_Motors;
 
+create table user(
+Email varchar(300),
+Password varchar(20),
+Primary Key (Email)
+);
+
 create table Vehicle (
 Vehicle_Number varchar(20),
 vehicle_Brand_Name varchar(40) Not Null,

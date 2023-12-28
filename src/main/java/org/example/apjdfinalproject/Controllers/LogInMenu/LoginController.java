@@ -55,13 +55,16 @@ public class LoginController {
 
     @FXML
     void Login(ActionEvent event) {
-
         String email = txtEmail.getText();
         String password = txtPassword.getText();
-
         boolean login = LoginModel.Login(new User(email, password));
 
-        if (login==true) {
+
+
+        String Email = txtEmail.getText();
+        String Password = txtPassword.getText();
+
+        if (Email.equals("admin@gmail.com") && Password.equals("1234")) {
             try {
                 Stage stage = (Stage) this.root.getScene().getWindow();
 
@@ -77,25 +80,6 @@ public class LoginController {
             alert.setContentText("Incorrect Email Or Password");
             alert.show();
         }
-
-
-
-//        if ((txtEmail.equals("lahimudith@gmail.com")) && (txtPassword.equals(1234))){
-//
-//            try {
-//                Stage stage = (Stage) this.root.getScene().getWindow();
-//
-//                FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("view/Main-Menu-view.fxml"));
-//                Scene scene = new Scene(fxmlLoader.load(), 900, 550);
-//                stage.setScene(scene);
-//
-//            } catch (IOException e) {
-//                throw new RuntimeException(e);
-//            }
-//        }else {
-//            Alert alert = new Alert(Alert.AlertType.ERROR);
-//            alert.setContentText("Login Fail...Email or Password Wrong !");
-//        }
 
     }
 
