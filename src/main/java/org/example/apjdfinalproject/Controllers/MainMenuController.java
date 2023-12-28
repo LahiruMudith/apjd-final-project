@@ -1,20 +1,30 @@
 package org.example.apjdfinalproject.Controllers;
 
 import javafx.animation.TranslateTransition;
-import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Scene;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.input.ScrollEvent;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
+import javafx.stage.Stage;
 import javafx.util.Duration;
+import org.example.apjdfinalproject.HelloApplication;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
 public class MainMenuController implements Initializable {
+
+    @FXML
+    private Pane CenterPane;
+
     @FXML
     private ImageView Menu;
 
@@ -30,24 +40,66 @@ public class MainMenuController implements Initializable {
     private EventHandler<? super ScrollEvent> ActionEvent;
 
     @FXML
-    void btnCustomers(ActionEvent event) {
-
+    void BackToLogIn(MouseEvent event) {
+        Stage stage = (Stage) this.root.getScene().getWindow();
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("view/Login-view.fxml"));
+            Scene scene = new Scene(fxmlLoader.load(), 600, 400);
+            stage.setScene(scene);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+    @FXML
+    void CloseRent(MouseEvent event) {
+        try {
+            Pane load = FXMLLoader.load(HelloApplication.class.getResource("view/Close-Rent-view.fxml"));
+            CenterPane.getChildren().setAll(load);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     @FXML
-    void btnIssueVehicle(ActionEvent event) {
-
+    void IssueVehicle(MouseEvent event) {
+        try {
+            Pane load = FXMLLoader.load(HelloApplication.class.getResource("view/Issue-Vehicle-view.fxml"));
+            CenterPane.getChildren().setAll(load);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     @FXML
-    void btnVehicles(ActionEvent event) {
-
+    void LoadAllIssueVehicle(MouseEvent event) {
+        try {
+            Pane load = FXMLLoader.load(HelloApplication.class.getResource("view/Load-Issue-Vehicle-view.fxml"));
+            CenterPane.getChildren().setAll(load);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     @FXML
-    void btnViewssueVehicles(ActionEvent event) {
-
+    void SearchMember(MouseEvent event) {
+        try {
+            Pane load = FXMLLoader.load(HelloApplication.class.getResource("view/Search-Customer-view.fxml"));
+            CenterPane.getChildren().setAll(load);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
+
+    @FXML
+    void SearchVehicle(MouseEvent event) {
+        try {
+            Pane load = FXMLLoader.load(HelloApplication.class.getResource("view/Search-Vehicle-view.fxml"));
+            CenterPane.getChildren().setAll(load);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -84,4 +136,6 @@ public class MainMenuController implements Initializable {
             } );
         });
     }
+
+
 }

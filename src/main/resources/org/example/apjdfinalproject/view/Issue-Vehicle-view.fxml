@@ -7,8 +7,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
-<AnchorPane fx:id="root" prefHeight="502.0" prefWidth="650.0" style="-fx-background-color: #bdc3c7;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.apjdfinalproject.Controllers.IssueVehicleController">
+<AnchorPane fx:id="root" prefHeight="502.0" prefWidth="650.0" style="-fx-background-color: #bdc3c7;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.apjdfinalproject.Controllers.Vehicle.IssueVehicleController">
    <children>
       <Text layoutX="245.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Issue Vehicle" underline="true">
          <font>
@@ -41,14 +40,9 @@
             <Font name="Book Antiqua" size="12.0" />
          </font>
       </Text>
-      <ImageView fitHeight="43.0" fitWidth="36.0" layoutX="266.0" layoutY="423.0" onMouseClicked="#IssueVehicle" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="43.0" fitWidth="45.0" layoutX="300.0" layoutY="425.0" onMouseClicked="#IssueVehicle" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../assets/CarRent.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="43.0" fitWidth="36.0" layoutX="388.0" layoutY="423.0" onMouseClicked="#ViewAll" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../assets/LoadAllIcon.png" />
          </image>
       </ImageView>
    </children>

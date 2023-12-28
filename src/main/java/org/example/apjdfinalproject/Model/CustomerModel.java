@@ -1,5 +1,7 @@
 package org.example.apjdfinalproject.Model;
 
+import org.example.apjdfinalproject.TM.LoadAllCustomerTM;
+import org.example.apjdfinalproject.TM.LoadIssueVehicleTM;
 import org.example.apjdfinalproject.TO.Customer;
 import org.example.apjdfinalproject.db.DBConnection;
 
@@ -103,8 +105,34 @@ public class CustomerModel {
             throw new RuntimeException(e);
         }
     }
-    public static ArrayList ViewAllCustomer() {
-        return null;
+    public static ArrayList<LoadAllCustomerTM> ViewAllCustomer() {
+        Connection connection = DBConnection.getDbConnection().getConnection();
+
+        try {
+            PreparedStatement stm = connection.prepareStatement("select * from customer");
+
+            ResultSet resultSet = stm.executeQuery();
+
+            ArrayList<LoadAllCustomerTM> list = new ArrayList<>();
+
+            while (resultSet.next()) {
+                LoadAllCustomerTM tm = new LoadAllCustomerTM();
+
+                tm.setNIC(resultSet.getString(1));
+                tm.setName(resultSet.getString(2));
+                tm.setAddress(resultSet.getString(3));
+                tm.setAge(resultSet.getInt(4));
+                tm.setPhoneNumber(resultSet.getInt(5));
+                tm.setPhoneNumber2(resultSet.getInt(6));
+
+                list.add(tm);
+            }
+            return list;
+
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+
     }
     
 }

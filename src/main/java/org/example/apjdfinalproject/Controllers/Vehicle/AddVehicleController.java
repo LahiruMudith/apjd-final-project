@@ -1,4 +1,4 @@
-package org.example.apjdfinalproject.Controllers;
+package org.example.apjdfinalproject.Controllers.Vehicle;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;

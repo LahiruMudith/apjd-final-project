@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="root" prefHeight="502.0" prefWidth="900.0" style="-fx-background-color: #bdc3c7;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.apjdfinalproject.Controllers.Customer.LoadAllCustomerController">
+   <children>
+      <TableView fx:id="tblLoadAllCustomer" layoutX="103.0" layoutY="40.0" prefHeight="462.0" prefWidth="900.0" style="-fx-background-color: #bdc3c7;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="40.0">
+        <columns>
+          <TableColumn prefWidth="107.99994200468063" text="NIC" />
+          <TableColumn prefWidth="161.59996032714844" text="Name" />
+            <TableColumn prefWidth="334.3999938964844" text="Address" />
+            <TableColumn prefWidth="40.0" text="Age" />
+            <TableColumn prefWidth="132.800048828125" text="Phone Number" />
+            <TableColumn prefWidth="132.800048828125" text="Phone Number 2" />
+        </columns>
+      </TableView>
+      <Text fill="#cc0000" layoutX="381.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="View All Customer" AnchorPane.topAnchor="8.734375">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="34.0" fitWidth="34.0" layoutX="-3.0" layoutY="-3.0" onMouseClicked="#Back" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="3.0" AnchorPane.topAnchor="3.0">
+         <image>
+            <Image url="@../assets/Backing_Logo.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

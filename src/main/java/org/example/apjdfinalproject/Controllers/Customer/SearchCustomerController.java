@@ -1,4 +1,4 @@
-package org.example.apjdfinalproject.Controllers;
+package org.example.apjdfinalproject.Controllers.Customer;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -51,7 +51,6 @@ public class SearchCustomerController {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-
     }
 
     @FXML
@@ -89,7 +88,14 @@ public class SearchCustomerController {
 
     @FXML
     void LoadAll(MouseEvent event) {
-
+        Stage stage = (Stage) this.root.getScene().getWindow();
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("view/Load-All-Customer.fxml"));
+            Scene scene = new Scene(fxmlLoader.load(), 900, 502);
+            stage.setScene(scene);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     @FXML

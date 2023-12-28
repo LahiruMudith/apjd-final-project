@@ -1,6 +1,5 @@
 package org.example.apjdfinalproject.Model;
 
-import org.example.apjdfinalproject.Controllers.LoadIssueVehicleController;
 import org.example.apjdfinalproject.TM.LoadIssueVehicleTM;
 import org.example.apjdfinalproject.db.DBConnection;
 

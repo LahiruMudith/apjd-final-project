@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="502.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.apjdfinalproject.Controllers.Vehicle.CloseRentController">
+   <children>
+      <Text layoutX="265.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rent Close" underline="true">
+         <font>
+            <Font name="Book Antiqua Bold Italic" size="28.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtSearchIssueID" layoutX="74.0" layoutY="90.0" onAction="#KeySearch" prefHeight="43.0" prefWidth="452.0" promptText="Search Issue ID" style="-fx-background-radius: 5;" />
+      <ImageView fitHeight="43.0" fitWidth="43.0" layoutX="534.0" layoutY="90.0" onMouseClicked="#Search" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/SearchIcon.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <TextField fx:id="txtCustomerNIC" layoutX="98.0" layoutY="188.0" prefHeight="43.0" prefWidth="452.0" style="-fx-background-radius: 10; -fx-background-radius: 10; -fx-background-color: none;" />
+      <TextField fx:id="txtCustomerName" layoutX="98.0" layoutY="231.0" prefHeight="43.0" prefWidth="452.0" style="-fx-background-radius: 10; -fx-background-radius: 10; -fx-background-color: none;" />
+      <TextField fx:id="txtVehicleNumber" layoutX="98.0" layoutY="274.0" prefHeight="43.0" prefWidth="452.0" style="-fx-background-radius: 10; -fx-background-radius: 10; -fx-background-color: none;" />
+      <TextField fx:id="txtVehicleBrand" layoutX="99.0" layoutY="317.0" prefHeight="43.0" prefWidth="452.0" style="-fx-background-radius: 10; -fx-background-radius: 10; -fx-background-color: none;" />
+      <ImageView fitHeight="61.0" fitWidth="96.0" layoutX="294.0" layoutY="405.0" onMouseClicked="#RentCloseDone" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/Rent_Close_Done.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Text layoutX="84.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Issue ID">
+         <font>
+            <Font name="Californian FB" size="12.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
