@@ -17,7 +17,7 @@
          </font>
       </Text>
       <TextField fx:id="txtCustomerNicNumber" layoutX="102.0" layoutY="72.0" prefHeight="43.0" prefWidth="465.0" promptText="Enter Customer NIC Number" style="-fx-background-radius: 10;" />
-      <Button layoutX="265.0" layoutY="444.0" mnemonicParsing="false" onMouseClicked="#Add" prefHeight="43.0" prefWidth="138.0" style="-fx-background-color: #2ecc71; -fx-background-radius: 15;" text="ADD" textFill="#fafafa">
+      <Button layoutX="265.0" layoutY="444.0" mnemonicParsing="false" onMouseClicked="#Add" prefHeight="43.0" prefWidth="138.0" style="-fx-background-color: #2ecc71; -fx-background-radius: 15;" stylesheets="@../assets/css/button.css" text="ADD" textFill="#fafafa">
          <font>
             <Font name="Cambria Math" size="20.0" />
          </font>
@@ -37,7 +37,7 @@
       </Text>
       <ImageView fitHeight="34.0" fitWidth="34.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#Back" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../assets/Backing_Logo.png" />
+            <Image url="@../assets/img/Backing_Logo.png" />
          </image>
       </ImageView>
    </children>

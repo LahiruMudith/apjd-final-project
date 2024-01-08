@@ -4,18 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="30159fcf-0036-4e55-a2a9-e4d0e2cbc345" name="Changes" comment="2023.12.28 Work">
+    <list default="true" id="30159fcf-0036-4e55-a2a9-e4d0e2cbc345" name="Changes" comment="2023.12.28 Work (New)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataBase/db.sql" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/db.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/apjdfinalproject/Controllers/LogInMenu/CreateAccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/apjdfinalproject/Controllers/LogInMenu/CreateAccountController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/apjdfinalproject/Controllers/LogInMenu/ForgotPasswordController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/apjdfinalproject/Controllers/LogInMenu/ForgotPasswordController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/apjdfinalproject/Controllers/LogInMenu/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/apjdfinalproject/Controllers/LogInMenu/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/apjdfinalproject/Controllers/Vehicle/AddVehicleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/apjdfinalproject/Controllers/Vehicle/AddVehicleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/apjdfinalproject/Controllers/Vehicle/LoadAllVehicleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/apjdfinalproject/Controllers/Vehicle/LoadAllVehicleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/apjdfinalproject/view/Add-Vehicle-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/apjdfinalproject/view/Add-Vehicle-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/apjdfinalproject/view/Forgot-Password-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/apjdfinalproject/view/Forgot-Password-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/apjdfinalproject/view/Load-All-Vehicle-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/apjdfinalproject/view/Load-All-Vehicle-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/apjdfinalproject/view/Search-Customer-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/apjdfinalproject/view/Search-Customer-view.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Student-Book-Project" beforeDir="false" afterPath="$PROJECT_DIR$/../../Student-Book-Project" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -124,7 +114,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="2023.12.28 Worl" />
     <MESSAGE value="2023.12.28 Work" />
-    <option name="LAST_COMMIT_MESSAGE" value="2023.12.28 Work" />
+    <MESSAGE value="2023.12.28 Work (New)" />
+    <option name="LAST_COMMIT_MESSAGE" value="2023.12.28 Work (New)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

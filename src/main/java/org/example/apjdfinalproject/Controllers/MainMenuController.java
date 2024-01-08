@@ -103,8 +103,14 @@ public class MainMenuController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+        try {
+            Pane load = FXMLLoader.load(HelloApplication.class.getResource("view/Search-Customer-view.fxml"));
+            CenterPane.getChildren().setAll(load);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
 
-        slideMenu.setTranslateX(-250);
+//        slideMenu.setTranslateX(-250);
 
         Menu.setOnMouseClicked(mouseEvent -> {
             TranslateTransition slids = new TranslateTransition();
@@ -126,7 +132,7 @@ public class MainMenuController implements Initializable {
             slids.setDuration(Duration.seconds(1));
             slids.setNode(slideMenu);
 
-            slids.setToX(-250);
+            slids.setToX(-248);
             slids.play();
 
             slideMenu.setTranslateX(0);

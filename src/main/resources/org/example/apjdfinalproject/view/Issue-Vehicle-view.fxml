@@ -42,7 +42,7 @@
       </Text>
       <ImageView fitHeight="43.0" fitWidth="45.0" layoutX="300.0" layoutY="425.0" onMouseClicked="#IssueVehicle" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../assets/CarRent.png" />
+            <Image url="@../assets/img/CarRent.png" />
          </image>
       </ImageView>
    </children>

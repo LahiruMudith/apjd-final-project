@@ -14,7 +14,7 @@
    <children>
       <ImageView fitHeight="400.0" fitWidth="600.0" layoutX="150.0" layoutY="94.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <image>
-            <Image url="@../assets/LogIn%20Pic%20(Bule).jpg" />
+            <Image url="@../assets/img/LogIn%20Pic%20(Bule).jpg" />
          </image>
       </ImageView>
       <TextField fx:id="txtEmail" layoutX="156.0" layoutY="127.0" prefHeight="38.0" prefWidth="287.0" promptText="Email" style="-fx-background-color: none; -fx-border-color: #ecf0f1; -fx-border-radius: 10; -fx-text-fill: #ecf0f1;" />
@@ -50,7 +50,7 @@
       </Text>
       <ImageView fitHeight="207.0" fitWidth="265.0" layoutX="168.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../assets/LOGO.png" />
+            <Image url="@../assets/img/LOGO.png" />
          </image>
       </ImageView>
    </children>

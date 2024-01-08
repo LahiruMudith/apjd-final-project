@@ -27,7 +27,7 @@
       </Text>
       <ImageView fitHeight="25.0" fitWidth="31.0" layoutX="14.0" layoutY="10.0" onMouseClicked="#Back" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../assets/Backing_Logo.png" />
+            <Image url="@../assets/img/Backing_Logo.png" />
          </image>
       </ImageView>
    </children>
